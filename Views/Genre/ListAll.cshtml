@@ -1,0 +1,21 @@
+@model List<Hakuna.Models.Genre>
+        @Html.Partial("_SuccessFlash")
+        @Html.Partial("_FailFlash")
+    <div class="container">
+        <h1>Genres List</h1>
+        <hr>
+        <div class="card-list col-md-6 col-sm-12" >
+            @foreach(var item in Model)
+            {
+            <div class="card movie-card mb-3" style="text-align:center;">
+                <div class="card-header" >
+                    <h2 >@item.Name</h2>
+                </div>
+                
+            </div>
+            }
+    </div>
+    
+ 
+</div>
+   

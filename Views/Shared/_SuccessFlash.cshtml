@@ -1,0 +1,44 @@
+﻿@{
+    bool success = false;
+    if (ViewData.ContainsKey("success"))
+    {
+        success = (bool)(ViewData["success"] ?? false);
+    }
+}
+@if(success)
+{
+    <style>
+        #success-alert{
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            transition: opacity 1s ease-in-out;
+        }
+        .fade{
+            opacity: 0;
+        }
+        
+    </style>
+    <div id="success-alert" class="alert alert-success">
+        @ViewData["message"]
+    </div>
+    {ViewData["success"]=false;}
+    <script >
+    document.addEventListener("DOMContentLoaded", function () {
+    var successAlert = document.getElementById("success-alert");
+    setTimeout(function(){
+         if (successAlert !== null){
+             console.log(successAlert);
+         //    successAlert.style.opacity="0";
+         successAlert.classList.add("fade")
+         successAlert.style.opacity="0";
+         successAlert.style.cssText=" opacity: 0 ; ";
+         }
+    },1000)
+    
+    });
+</script>
+}
+

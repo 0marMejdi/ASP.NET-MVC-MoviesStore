@@ -1,0 +1,26 @@
+@model Hakuna.Models.Movie
+@using Microsoft.AspNetCore.Mvc.Rendering
+
+@{
+    Layout = "_AddForm";
+    ViewBag.Title = "Add new Movie";
+    ViewBag.AddHeadline = "Creating new Movie";
+}
+<div class="form-group">
+    <label class="form-label" >Name</label>
+    <input type="text" class="form-control" required asp-for=Name value="">
+</div>
+
+<div class="form-group">
+    <label class="form-label">Release Date</label>
+    <input type="text" class="form-control" required asp-for=ReleaseDate value="">
+</div>
+<div class="form-group">
+    <label asp-for="GenreID" class="form-label">Genre</label> 
+    <select asp-for="GenreID" required asp-items="ViewBag.Genres" class="form-control">
+        <option value="" selected > -- Select a Genre from the list</option>
+    </select>
+    <span asp-validation-for="GenreID" class="text-danger"></span>
+</div>
+<div class="form-group"><label asp-for="PosterPicture" class="form-label"> </label>
+    <input asp-for="PosterPicture" type="file" class="form-control"/></div>

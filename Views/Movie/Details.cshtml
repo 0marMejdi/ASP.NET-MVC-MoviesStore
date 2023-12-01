@@ -1,0 +1,24 @@
+@model Hakuna.Models.Movie
+@{
+    Layout = "_DetailsLayout";
+    ViewBag.Title = "Movie Details";
+    
+}
+<div>
+    <label class="form-label">Name: </label>
+    @Model.Name
+</div>
+    
+<div>
+    <label class="form-label">Release Date:</label>
+    @Model.ReleaseDate
+</div>
+
+<div>
+    <label class="form-label">Genre:</label>
+    @Model.Genre.Name
+</div>
+<div >
+    <img  class="col-12 align-content-center" src="@Url.Action("GetImage", "Movie", new { imageName = @Model.Name  + ".jpg" })" alt="My Image">
+
+</div>

@@ -1,0 +1,29 @@
+﻿@{
+    bool fail = false;
+    if (ViewData.ContainsKey("fail"))
+    {
+        fail = (bool)(ViewData["fail"] ?? false);
+    }
+}
+@if(fail)
+{
+    <style>
+        #fail-alert{
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            transition: opacity 1s ease-in-out;
+        }
+        #fail-alert.fade{
+            opacity: 0;
+        }
+        
+    </style>
+    <div id="fail-alert" class="alert alert-danger">
+        @ViewData["message"]
+    </div>
+    {ViewData["fail"]=false;}
+}
+

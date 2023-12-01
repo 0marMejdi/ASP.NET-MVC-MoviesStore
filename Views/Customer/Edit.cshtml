@@ -1,0 +1,32 @@
+@model Hakuna.Models.Customer
+
+@{
+    ViewBag.Title = "Customer Edit";
+    Layout = "_EditLayout";
+    ViewBag.EditHeadline = "Modifying Customer";
+
+}
+
+
+<div class="form-group">
+    <label asp-for="Name">Name:</label>
+    <input type="text" asp-for="Name"  value="@Model.Name" required  class="form-control">
+</div>
+
+<div class="form-group">
+    <label asp-for="LastName">Last Name:</label>
+    <input type="text" asp-for="LastName" value="@Model.LastName"  required class="form-control">
+</div>
+
+<div class="form-group">
+    <label asp-for="Name">Age:</label>
+    <input type="number"  asp-for="Age"  value="@Model.Age" required min="12" class="form-control">
+</div>
+<div class="form-group">
+    <label asp-for="MembershipId">Membership Type:</label>
+    <select asp-for="MembershipId" value="@Model.MembershipId" required asp-items="@ViewBag.Members" class="form-control">
+        <option value="" selected  > -- Select a Membership from the list</option>
+        </select>
+</div>
+
+    <input type="hidden" asp-for="Id" value="@Model.Id" />

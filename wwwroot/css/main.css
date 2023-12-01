@@ -1,0 +1,12 @@
+.movie-card{
+    text-align: "center";    
+}
+.movie-card *{
+    text-align: "center";
+    color : black;
+
+}
+.layout-footer{
+    /*bottom : 0*/
+    bottom:unset ;
+}

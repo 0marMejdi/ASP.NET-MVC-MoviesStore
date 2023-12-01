@@ -1,0 +1,24 @@
+@{
+    Layout = "_Layout.cshtml";
+    var controllerName = ViewContext.RouteData.Values["controller"] as string;
+}
+@Html.Partial("_SuccessFlash")
+@Html.Partial("_FailFlash")
+<h1>@ViewBag.Title</h1>
+<hr>
+    
+    <div class="card col-md-6 col-sm-12"> 
+        <div class="card-body">
+            @RenderBody()
+        </div>
+        <div class="card-footer">
+            <form method="post" asp-controller="@controllerName" asp-action="Delete" asp-route-id="@Model.Id">
+                <button type="submit" class="btn btn-danger me-3">
+                    Delete
+                </button>
+                <a href="@Url.Action("Edit", controllerName,new{id=Model.Id})" class="btn btn-primary btn-info">Edit</a>
+            </form>
+            
+
+        </div>
+    </div>

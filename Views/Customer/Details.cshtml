@@ -1,0 +1,35 @@
+@model Customer
+@{
+    ViewBag.detailsHeadline = "Customer Details";
+    Layout = "_DetailsLayout";
+}
+
+<div>
+    <lablel>Name: </lablel>
+    <text>@Model.Name</text>
+</div>
+<div>
+    <lablel>Last Name: </lablel>
+    <text>@Model.LastName</text>
+</div>
+<div>
+    <lablel>Age: </lablel>
+    <text>@Model.Age</text>
+</div>
+
+<div>
+    <lablel>Membership Title: </lablel>
+    <text>@Model.Membershiptype?.Title</text>
+</div>
+<div>
+    <lablel>Membership Duration In Month : </lablel>
+    <text>@Model.Membershiptype?.DurationInMonth</text>
+</div>
+<div>
+    <lablel>Membership Sign Up Fee: </lablel>
+    <text>@Model.Membershiptype?.SignUpFee</text>
+</div>
+<div>
+    <lablel>Membership Discount Rate: </lablel>
+    <text>@Model.Membershiptype?.DiscountRate</text>
+</div>

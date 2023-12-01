@@ -1,0 +1,24 @@
+@model Hakuna.Models.Membership
+
+@{
+    ViewBag.Title = "Adding a new Membership Type";
+    ViewBag.AddHeadline = "Create Memebership";
+    Layout = "_AddForm";
+
+}
+<div class="form-group">
+    <label class="form-label" >Title</label>
+    <input type="text" class="form-control" required asp-for="Title" value="">
+</div>
+<div class="form-group">
+    <label class="form-label" >Duration in Month</label>
+    <input type="text" class="form-control" required asp-for="DurationInMonth" value="">
+</div>
+<div class="form-group">
+    <label class="form-label" >Sign Up Fee</label>
+    <input type="text" class="form-control" required asp-for="SignUpFee" value="">
+</div>
+<div class="form-group">
+    <label class="form-label" >Discount Rate</label>
+    <input type="text" class="form-control" required asp-for="DiscountRate" value="">
+</div>
