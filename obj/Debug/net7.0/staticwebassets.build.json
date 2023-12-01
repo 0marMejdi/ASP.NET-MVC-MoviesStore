@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fl2Cxp/R3JWGpxGa06JAeGCW16EozhaSYyeHQ1Lms+Y=",
+  "Hash": "18TJKi/tmOdgSzR6jP6B5W1cKSe9XVJroZoqWthkQK0=",
   "Source": "Hakuna",
   "BasePath": "_content/Hakuna",
   "Mode": "Default",
@@ -1122,57 +1122,6 @@
       "OriginalItemSpec": "wwwroot\\uploads\\_defaultMovie.jpg"
     },
     {
-      "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Assassin's Creed III.jpg",
-      "SourceId": "Hakuna",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\",
-      "BasePath": "_content/Hakuna",
-      "RelativePath": "uploads/Assassin's Creed III.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Assassin's Creed III.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Avengers.jpeg",
-      "SourceId": "Hakuna",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\",
-      "BasePath": "_content/Hakuna",
-      "RelativePath": "uploads/Avengers.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Avengers.jpeg"
-    },
-    {
-      "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Breaking Bad.jpg",
-      "SourceId": "Hakuna",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\",
-      "BasePath": "_content/Hakuna",
-      "RelativePath": "uploads/Breaking Bad.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Breaking Bad.jpg"
-    },
-    {
       "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Call of Duty 4 Modern Warfare.jpg",
       "SourceId": "Hakuna",
       "SourceType": "Discovered",
@@ -1190,12 +1139,12 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Call of Duty 4 Modern Warfare.jpg"
     },
     {
-      "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Far Cry 3.jpg",
+      "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Outlast.jpg",
       "SourceId": "Hakuna",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\",
       "BasePath": "_content/Hakuna",
-      "RelativePath": "uploads/Far Cry 3.jpg",
+      "RelativePath": "uploads/Outlast.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1204,41 +1153,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Far Cry 3.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\fission-vs.-fusion-illustration.jpeg",
-      "SourceId": "Hakuna",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\",
-      "BasePath": "_content/Hakuna",
-      "RelativePath": "uploads/fission-vs.-fusion-illustration.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\fission-vs.-fusion-illustration.jpeg"
-    },
-    {
-      "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\KabaKanda.jpg",
-      "SourceId": "Hakuna",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\",
-      "BasePath": "_content/Hakuna",
-      "RelativePath": "uploads/KabaKanda.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\KabaKanda.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\Outlast.jpg"
     }
   ]
 }

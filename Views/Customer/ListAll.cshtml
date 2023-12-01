@@ -1,23 +1,27 @@
 @model List<Hakuna.Models.Customer>
     @Html.Partial("_SuccessFlash")
     @Html.Partial("_FailFlash")
-    <div class="container">
+<div class="container">
+    <div class="d-flex justify-content-between">
         <h1>Customers List</h1>
-        <hr>
-        <div class="card-list col-md-6 col-sm-12" >
-            @foreach(var item in Model)
-            {
+        <a href='@Url.Action("Add", "Customer")' class="btn btn-primary btn-info "> Add new customer </a>
+           
+    </div>
+    <hr>
+    <div class="card-list col-md-6 col-sm-12">
+        @foreach (var item in Model)
+        {
             <div class="card movie-card mb-3" style="text-align:center;">
-                <div class="card-header" >
-                    <h2 >@Html.ActionLink(item.Name + " " + item.LastName, "Details", new {id=item.Id})</h2>
+                <div class="card-header">
+                    <h2 >@Html.ActionLink(item.Name + " " + item.LastName, "Details", new { id = item.Id })</h2>
                 </div>
                 <div class="card-body">
                     <Label>Age: </Label>
                     @item.Age
-                </div> 
+                </div>
             </div>
-            }
+        }
     </div>
-    
- 
+
+
 </div>

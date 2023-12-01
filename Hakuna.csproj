@@ -12,11 +12,13 @@
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         <PrivateAssets>all</PrivateAssets>
       </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.14" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.sqlserver" Version="7.0.14" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.tools" Version="7.0.14">
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         <PrivateAssets>all</PrivateAssets>
       </PackageReference>
+      <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.11" />
     </ItemGroup>
 
     <ItemGroup>

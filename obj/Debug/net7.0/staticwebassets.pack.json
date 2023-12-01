@@ -253,36 +253,16 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Assassin's Creed III.jpg",
-      "PackagePath": "staticwebassets\\uploads\\Assassin's Creed III.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Avengers.jpeg",
-      "PackagePath": "staticwebassets\\uploads\\Avengers.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Breaking Bad.jpg",
-      "PackagePath": "staticwebassets\\uploads\\Breaking Bad.jpg"
-    },
-    {
       "Id": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Call of Duty 4 Modern Warfare.jpg",
       "PackagePath": "staticwebassets\\uploads\\Call of Duty 4 Modern Warfare.jpg"
     },
     {
-      "Id": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Far Cry 3.jpg",
-      "PackagePath": "staticwebassets\\uploads\\Far Cry 3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\KabaKanda.jpg",
-      "PackagePath": "staticwebassets\\uploads\\KabaKanda.jpg"
+      "Id": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Outlast.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Outlast.jpg"
     },
     {
       "Id": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\_defaultMovie.jpg",
       "PackagePath": "staticwebassets\\uploads\\_defaultMovie.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\fission-vs.-fusion-illustration.jpeg",
-      "PackagePath": "staticwebassets\\uploads\\fission-vs.-fusion-illustration.jpeg"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Hakuna.Microsoft.AspNetCore.StaticWebAssets.props",

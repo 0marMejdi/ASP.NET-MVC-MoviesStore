@@ -7,14 +7,17 @@
 @Html.Partial("_SuccessFlash")
 @Html.Partial("_FailFlash")
 <div class="container">
-    <h1>Membership types List</h1>
+    <div class="d-flex justify-content-between">
+        <h1>Membership types List</h1>
+        <a href='@Url.Action("Add", "Membership")' class="btn btn-primary btn-info "> Add new Membership type </a>
+    </div>
     <hr>
     <div class="card-list col-md-6 col-sm-12" >
         @foreach(var item in Model)
         {
             <div class="card movie-card mb-3" style="text-align:center;">
                 <div class="card-header" >
-                    <h2 >@Html.ActionLink(item.Title ?? "____", "Details", new {id=item.Id})</h2>
+                    <h2 > @item.Title @*@Html.ActionLink(item.Title ?? "____", "List", new {id=item.Id})*@</h2>
                 </div>
                 <div class="card-body">
                     <div >Discount Rate: @item.DiscountRate</div>

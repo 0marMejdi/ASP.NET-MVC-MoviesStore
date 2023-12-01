@@ -2,7 +2,9 @@
         @Html.Partial("_SuccessFlash")
         @Html.Partial("_FailFlash")
     <div class="container">
-        <h1>Genres List</h1>
+        <div class="d-flex justify-content-between">
+                <h1>Genres List</h1>
+                <a href='@Url.Action("Add", "Genre")' class="btn btn-primary btn-info "> Add new genre </a></div>
         <hr>
         <div class="card-list col-md-6 col-sm-12" >
             @foreach(var item in Model)

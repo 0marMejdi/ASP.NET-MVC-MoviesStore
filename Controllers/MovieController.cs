@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.IO;
 using System.Linq;
+using Microsoft.CodeAnalysis.Elfie.Serialization;
+
 namespace Hakuna.Controllers
 {
     public class MovieController : Controller
@@ -71,7 +73,7 @@ namespace Hakuna.Controllers
         {
             if (movie.Name == null)
                 return false;
-            if (movie.ReleaseDate <=0)
+            if ( movie.ReleaseDate == null || movie.ReleaseDate <=0)
                 return false;
             return true;
         }
@@ -95,11 +97,7 @@ namespace Hakuna.Controllers
             {
                 return NotFound();
             }
-            
-            
-             ViewBag.ImagePath = Path.Combine("wwwroot", "uploads", movie.Name + ".jpg");
-
-            
+            ViewBag.ImagePath = Path.Combine("wwwroot", "uploads", movie.Name + ".jpg");
             return View(movie);
                 
         }
@@ -112,6 +110,8 @@ namespace Hakuna.Controllers
             }
             else
             {
+                var existingPath = Path.Combine("wwwroot", "uploads", movie.Name + ".jpg");
+                System.IO.File.Delete(existingPath);
                 _context.Movies.Remove(movie);
                 _context.SaveChanges();
                 Success("Movie Deleted Successfully");
@@ -120,8 +120,6 @@ namespace Hakuna.Controllers
             return ListAll();
 
         }
-        
-        
         public IActionResult GetImage(string imageName)
         {
             var imagePath = Path.Combine("wwwroot", "uploads", imageName);
@@ -133,5 +131,57 @@ namespace Hakuna.Controllers
             var imageBytes = System.IO.File.ReadAllBytes(imagePath);
             return File(imageBytes, "image/jpeg"); // Adjust the content type based on your image type
         }
+
+        public IActionResult Edit(Guid id)
+        {
+            ICollection<Genre> genres = _context.Genres.ToList();
+            ViewBag.Genres = new SelectList(genres, "Id", "Name");
+            Movie? oldMovie = _context.Movies.Find(id);
+            if (oldMovie == null)
+                return ListAll();
+            return View(oldMovie);
+        }
+        [HttpPost]
+        public IActionResult Edit(Movie newMovie)
+        {
+            if (!IsValid(newMovie))
+            {
+                Fail("Cannot update customer due to input");
+                return Edit(newMovie.Id);
+            }
+            Movie? existingMovie = _context.Movies.Find(newMovie.Id);
+
+            if (existingMovie == null)
+            {
+                return NotFound();
+            }
+            if (newMovie.PosterPicture != null )
+            {
+                var existingPath = Path.Combine("wwwroot", "uploads", existingMovie.Name + ".jpg");
+                System.IO.File.Delete(existingPath);
+                Console.WriteLine(existingPath + " is " + (System.IO.File.Exists(existingPath)?"yes":"no"));
+                var filePath = Path.Combine("wwwroot", "uploads", newMovie.Name + ".jpg");
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    newMovie.PosterPicture.CopyTo(stream);
+                }
+            }
+            else
+            {
+                var existingPath = Path.Combine("wwwroot", "uploads", existingMovie.Name + ".jpg");
+                var filePath = Path.Combine("wwwroot", "uploads", newMovie.Name + ".jpg");
+
+                System.IO.File.Move(existingPath,filePath);
+            }
+            // Update the properties of the existing movie with the values from the form
+            _context.Entry(existingMovie).CurrentValues.SetValues(newMovie);
+            
+            
+            // Save changes to the database
+            _context.SaveChanges();
+            Success("Customer updated Successfully");
+            return ListAll();
+        }
+
     }
 }
