@@ -257,6 +257,10 @@
       "PackagePath": "staticwebassets\\uploads\\Assassin's Creed III.jpg"
     },
     {
+      "Id": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Blur.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Blur.jpg"
+    },
+    {
       "Id": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Call of Duty Black ops.jpg",
       "PackagePath": "staticwebassets\\uploads\\Call of Duty Black ops.jpg"
     },
@@ -267,6 +271,18 @@
     {
       "Id": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Hitman Absolution.jpg",
       "PackagePath": "staticwebassets\\uploads\\Hitman Absolution.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Mortal Kombat XK.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Mortal Kombat XK.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Resident Evil 7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Resident Evil 7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Silent Hill 2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Silent Hill 2.jpg"
     },
     {
       "Id": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Slender Man The Arrival.jpg",

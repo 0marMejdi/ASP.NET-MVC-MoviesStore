@@ -1,6 +1,8 @@
 using Hakuna.Models;
+using Hakuna.Repositories;
+using Hakuna.Services.Services;
+using Hakuna.Services.ServicesContracts;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,11 @@ builder.Services.AddDbContext<AppDbContext>(
         builder.Configuration.GetConnectionString("DefaultConnection")
     )
 );
+
+// Register repository and service
+builder.Services.AddScoped<MovieRepository>();
+builder.Services.AddScoped<IMovieService, MovieService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

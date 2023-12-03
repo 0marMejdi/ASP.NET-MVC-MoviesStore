@@ -51,7 +51,7 @@ namespace Hakuna.Controllers
                 _dbcontext.SaveChanges();
                 Success("Added Customer successfully!");
             }
-            return Add();
+            return ListAll();
         }
         public IActionResult ListAll()
         {
@@ -93,7 +93,7 @@ namespace Hakuna.Controllers
             
             return ListAll();
         }
-
+        
         public IActionResult Edit(Guid id)
         {
             ICollection<Membership> memberships = _dbcontext.Membershiptypes.ToList();

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.IO;
 using System.Linq;
+using Hakuna.Services.ServicesContracts;
 using Microsoft.CodeAnalysis.Elfie.Serialization;
 
 namespace Hakuna.Controllers
@@ -24,9 +25,12 @@ namespace Hakuna.Controllers
             ViewData["message"] = message;
         }
         private readonly AppDbContext _context;
-        public MovieController(AppDbContext context)
+        private readonly IMovieService _movieService;
+
+        public MovieController(AppDbContext _context, IMovieService movieService)
         {
-            this._context = context;
+            _movieService = movieService;
+            this._context = _context;
         }
         public IActionResult Add()
         {
@@ -78,15 +82,23 @@ namespace Hakuna.Controllers
             return true;
         }
         
-        
         public IActionResult Index(){
             return RedirectToAction("ListAll");
         }
-        public IActionResult ListAll(){
-            List<Movie> movies = _context.Movies.ToList();
-            _context.SaveChanges();
+        public IActionResult ListAll(bool ordered = false)
+        {
+            List<Movie> movies;
+            if (ordered)
+            {
+                movies = _movieService.GetAllMoviesOrdered();
+            }
+            else
+            {
+                movies = _movieService.GetAllMovies();
+            }
             return View(nameof(ListAll),movies);
         }
+        
         public IActionResult Details(Guid id)
         {   
             var movie = 

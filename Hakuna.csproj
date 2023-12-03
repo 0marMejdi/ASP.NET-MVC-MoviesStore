@@ -25,4 +25,8 @@
       <Folder Include="Migrations\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Pages\Kaka\Index.cshtml" />
+    </ItemGroup>
+
 </Project>
