@@ -10,10 +10,10 @@
         
         </div>
         <hr>
-        <div class="card-list col-md-4 col-sm-12">
+        <div class="row">
             @foreach (var item in Model.Movies)
             {
-                <div class="card movie-card mb-3" style="text-align:center;">
+                <div class="card movie-card col-lg-4 col-md-6 col-sm-12 mb-3" style="text-align:center;">
                     <div class="card-header">
                         <h2 >@Html.ActionLink(item.Name ?? "____", "Details", "Movie", new { id = item.Id })</h2>
                     </div>

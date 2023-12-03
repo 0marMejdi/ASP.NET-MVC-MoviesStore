@@ -7,23 +7,26 @@
         <h1>Movies List</h1>
         <a href='@Url.Action("Add", "Movie")' class="btn btn-primary btn-info "> Add new movie </a></div>
     <hr>
-    <div class="card-list col-md-4 col-sm-12">
+    <div class="row">
         @foreach (var item in Model)
         {
-            <div class="card movie-card mb-3" style="text-align:center;">
-                <div class="card-header">
-                    <h2 >@Html.ActionLink(item.Name ?? "____", "Details", new { id = item.Id })</h2>
-                </div>
+            @* <div class=""> *@
 
-                <div>
-                    @item.ReleaseDate
-                </div>
+                <div class="card movie-card col-lg-4 col-md-6 col-sm-12 mb-3" style="text-align:center;">
+                    <div class="card-header">
+                        <h2 >@Html.ActionLink(item.Name ?? "____", "Details", new { id = item.Id })</h2>
+                    </div>
 
-                <div >
-                    <img class="col-12 align-content-center" src="@Url.Action("GetImage", "Movie", new { imageName = @item.Name + ".jpg" })" alt="My Image">
+                    <div>
+                        @item.ReleaseDate
+                    </div>
 
+                    <div >
+                        <img class="col-12 align-content-center mb-1" src="@Url.Action("GetImage", "Movie", new { imageName = @item.Name + ".jpg" })" alt="My Image">
+
+                    </div>
                 </div>
-            </div>
+            
         }
     </div>
 </div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yir8wWEof8V3rewvgZxzp/thGdV7wQMv112J3TCLxVw=",
+  "Hash": "Kd8adHNrScxRyTjV0Iy0tl1HKBJTdLkhW6Eo4fIuUsE=",
   "Source": "Hakuna",
   "BasePath": "_content/Hakuna",
   "Mode": "Default",
@@ -1139,12 +1139,12 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Assassin's Creed III.jpg"
     },
     {
-      "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Call of Duty 4 - Modern Warfare.jpg",
+      "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Call of Duty Black ops.jpg",
       "SourceId": "Hakuna",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\",
       "BasePath": "_content/Hakuna",
-      "RelativePath": "uploads/Call of Duty 4 - Modern Warfare.jpg",
+      "RelativePath": "uploads/Call of Duty Black ops.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1153,15 +1153,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Call of Duty 4 - Modern Warfare.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\Call of Duty Black ops.jpg"
     },
     {
-      "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Far Cry 3.jpg",
+      "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Far Cry 3 - Golden Edition.jpg",
       "SourceId": "Hakuna",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\",
       "BasePath": "_content/Hakuna",
-      "RelativePath": "uploads/Far Cry 3.jpg",
+      "RelativePath": "uploads/Far Cry 3 - Golden Edition.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1170,7 +1170,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Far Cry 3.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\Far Cry 3 - Golden Edition.jpg"
     },
     {
       "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Hitman Absolution.jpg",
@@ -1188,6 +1188,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\Hitman Absolution.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Slender Man The Arrival.jpg",
+      "SourceId": "Hakuna",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\",
+      "BasePath": "_content/Hakuna",
+      "RelativePath": "uploads/Slender Man The Arrival.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Slender Man The Arrival.jpg"
     }
   ]
 }
