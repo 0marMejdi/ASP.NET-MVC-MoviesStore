@@ -16,10 +16,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Omar\Desktop\DotNet\Workspace\Hakuna\Hakuna
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Omar/Desktop/DotNet/Workspace/Hakuna/Hakuna/Pages/Kaka/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS2FrYVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Omar/Desktop/DotNet/Workspace/Hakuna/Hakuna/Views/Customer/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

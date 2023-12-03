@@ -85,7 +85,7 @@ namespace Hakuna.Controllers
         public IActionResult Index(){
             return RedirectToAction("ListAll");
         }
-        public IActionResult ListAll(bool ordered = false)
+        public IActionResult ListAll(bool ordered = false, Guid genreId = new(), Guid customerId = new())
         {
             List<Movie> movies;
             if (ordered)
@@ -95,6 +95,18 @@ namespace Hakuna.Controllers
             else
             {
                 movies = _movieService.GetAllMovies();
+            }
+
+            if (genreId != new Guid())
+            {
+                if (customerId != new Guid())
+                {
+                    movies = _movieService.GetMoviesByGenreAndCustomer(genreId, customerId);
+                }
+                else
+                {
+                    movies = _movieService.GetMovieByGenreId(genreId);
+                }
             }
             return View(nameof(ListAll),movies);
         }

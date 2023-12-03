@@ -21,8 +21,11 @@
                         @item.ReleaseDate
                     </div>
 
-                    <div >
-                        <img class="col-12 align-content-center mb-1" src="@Url.Action("GetImage", "Movie", new { imageName = @item.Name + ".jpg" })" alt="My Image">
+                    <div>
+                        <a href='~/uploads/@(item.Name+".jpg")'>
+                         <img class="col-12 align-content-center mb-1" src="@Url.Action("GetImage", "Movie", new { imageName = @item.Name + ".jpg" })" alt="My Image">     
+                        </a>
+                       
 
                     </div>
                 </div>
