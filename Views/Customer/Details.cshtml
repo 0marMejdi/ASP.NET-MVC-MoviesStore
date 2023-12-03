@@ -19,17 +19,10 @@
 
 <div>
     <lablel>Membership Title: </lablel>
-    <text>@Model.Membershiptype?.Title</text>
+    <text>@Html.ActionLink(Model.Membershiptype?.Title ?? "____","Details","Membership", new {id=Model.Membershiptype?.Id})</text>
+    
 </div>
 <div>
-    <lablel>Membership Duration In Month : </lablel>
-    <text>@Model.Membershiptype?.DurationInMonth</text>
-</div>
-<div>
-    <lablel>Membership Sign Up Fee: </lablel>
-    <text>@Model.Membershiptype?.SignUpFee</text>
-</div>
-<div>
-    <lablel>Membership Discount Rate: </lablel>
-    <text>@Model.Membershiptype?.DiscountRate</text>
+    
+    <a class="btn btn-warning" href='@Url.ActionLink("SeeMovies","Customer",new{customerId=Model.Id})'>See Movies</a>
 </div>

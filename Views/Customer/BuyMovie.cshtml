@@ -1,0 +1,42 @@
+@model System.Collections.Generic.List<Hakuna.Models.Movie>
+
+@{
+    ViewBag.Title = "Buying Movie";
+    Layout = "_Layout";
+}
+
+
+@Html.Partial("_SuccessFlash")
+@Html.Partial("_FailFlash")
+<div class="container">
+        <h1>Movies to buy List</h1>
+        <hr>
+        <div class="card-list col-md-4 col-sm-12">
+            @foreach (var item in Model)
+            {
+                <div class="card movie-card mb-3" style="text-align:center;">
+                    <div class="card-header">
+                        <h2 >@item.Name</h2>
+                    </div>
+                    <div >
+                        @item.ReleaseDate
+                    </div>
+
+                    <div >
+                        <img class="col-12 align-content-center" src="@Url.Action("GetImage", "Movie", new { imageName = @item.Name + ".jpg" })" alt="My Image">
+
+                    </div>
+                    <div class="card-footer">
+                        <a
+                            class="btn btn-primary btn-success"
+                            href='@Url.ActionLink(
+                                      "BuyMovie", 
+                                      "Customer", 
+                                      new { customerId=ViewBag.CustomerId, movieId=item.Id })'>
+                            Buy
+                        </a>
+                    </div>
+                </div>
+            }
+    </div>
+</div>

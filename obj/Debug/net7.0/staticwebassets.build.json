@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "18TJKi/tmOdgSzR6jP6B5W1cKSe9XVJroZoqWthkQK0=",
+  "Hash": "yir8wWEof8V3rewvgZxzp/thGdV7wQMv112J3TCLxVw=",
   "Source": "Hakuna",
   "BasePath": "_content/Hakuna",
   "Mode": "Default",
@@ -1122,12 +1122,12 @@
       "OriginalItemSpec": "wwwroot\\uploads\\_defaultMovie.jpg"
     },
     {
-      "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Call of Duty 4 Modern Warfare.jpg",
+      "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Assassin's Creed III.jpg",
       "SourceId": "Hakuna",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\",
       "BasePath": "_content/Hakuna",
-      "RelativePath": "uploads/Call of Duty 4 Modern Warfare.jpg",
+      "RelativePath": "uploads/Assassin's Creed III.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1136,15 +1136,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Call of Duty 4 Modern Warfare.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\Assassin's Creed III.jpg"
     },
     {
-      "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Outlast.jpg",
+      "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Call of Duty 4 - Modern Warfare.jpg",
       "SourceId": "Hakuna",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\",
       "BasePath": "_content/Hakuna",
-      "RelativePath": "uploads/Outlast.jpg",
+      "RelativePath": "uploads/Call of Duty 4 - Modern Warfare.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1153,7 +1153,41 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Outlast.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\Call of Duty 4 - Modern Warfare.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Far Cry 3.jpg",
+      "SourceId": "Hakuna",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\",
+      "BasePath": "_content/Hakuna",
+      "RelativePath": "uploads/Far Cry 3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Far Cry 3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\uploads\\Hitman Absolution.jpg",
+      "SourceId": "Hakuna",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\wwwroot\\",
+      "BasePath": "_content/Hakuna",
+      "RelativePath": "uploads/Hitman Absolution.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Hitman Absolution.jpg"
     }
   ]
 }

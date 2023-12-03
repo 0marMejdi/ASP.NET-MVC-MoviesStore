@@ -1,0 +1,24 @@
+@model Membership
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_DetailsLayout";
+}
+<div>
+    <lablel>Membership Title : </lablel>
+    <text>@Model.Title ??</text>
+</div>
+
+<div>
+    <lablel>Membership Duration In Month : </lablel>
+    <text>@Model.DurationInMonth</text>
+</div>
+<div>
+    <lablel>Membership Sign Up Fee: </lablel>
+    <text>@Model.SignUpFee</text>
+</div>
+<div>
+    <lablel>Membership Discount Rate: </lablel>
+    <text>@Model.DiscountRate</text>
+</div>
+

@@ -60,6 +60,11 @@ namespace Hakuna.Controllers
             
             return View("ListAll",customers);
         }
+
+        public IActionResult Index()
+        {
+            return ListAll();
+        }
         public IActionResult Details(Guid id)
         {
             var customer = _dbcontext.Customers
@@ -122,7 +127,54 @@ namespace Hakuna.Controllers
             Success("Customer updated Successfully");
             return ListAll();
         }
-        
+        [Route("Customer/BuyMovie/{customerId}")]
+        public IActionResult BuyMovie(Guid customerId)
+        {
+            var movies = _dbcontext.Movies.ToList();
+            ViewBag.CustomerId = customerId;
+            return View(movies);
+        }
+        [Route("Customer/BuyMovie/{customerId}/{movieId}")]
+        public IActionResult BuyMovie(Guid customerId, Guid movieId)
+        {
+            var customer = _dbcontext.Customers
+                .Include(customer1 => customer1.Movies)
+                .FirstOrDefault(custo => custo.Id == customerId);
+            var movie = _dbcontext.Movies.Find(movieId);
+            if (customer == null)
+            {
+                Fail("Customer not found");
+                return ListAll();
+            }
+
+            if (movie == null)
+            {
+                Fail("Movie not found");
+                return ListAll();
+            }
+            if (!customer.Movies.Contains(movie))
+            {
+                customer.Movies.Add(movie);
+                _dbcontext.SaveChanges();
+                Success("Associated movie with client successfully!");
+            }
+            else
+            {
+                Fail("Customer already bought this movie");
+            }
+
+            return SeeMovies(customerId);
+        }
+
+        public IActionResult SeeMovies(Guid customerId)
+        {
+            var customer = _dbcontext.Customers
+                .Include(c => c.Movies)
+                .FirstOrDefault(c => c.Id == customerId);
+            if (customer == null)
+                return ListAll();
+            return View("SeeMovies",customer);
+        }
     }
     
 }

@@ -62,11 +62,13 @@ public class MembershipController : Controller
         
         return View(membershiptypes);
     }
-
-
     public IActionResult Details(Guid id)
     {
-        throw new NotImplementedException();
+        var membership = db.Membershiptypes.Find(id);
+        if (membership == null)
+            return List();
+        return View(membership);
     }
+
 }
 }
