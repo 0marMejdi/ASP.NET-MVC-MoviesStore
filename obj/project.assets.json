@@ -11540,11 +11540,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\Hakuna.csproj",
+      "projectUniqueName": "C:\\Users\\Omar\\Desktop\\DotNet\\WorkSpace\\ASP.NET-MVC-MoviesStore\\Hakuna.csproj",
       "projectName": "Hakuna",
-      "projectPath": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\Hakuna.csproj",
+      "projectPath": "C:\\Users\\Omar\\Desktop\\DotNet\\WorkSpace\\ASP.NET-MVC-MoviesStore\\Hakuna.csproj",
       "packagesPath": "C:\\Users\\Omar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\obj\\",
+      "outputPath": "C:\\Users\\Omar\\Desktop\\DotNet\\WorkSpace\\ASP.NET-MVC-MoviesStore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Omar\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -11619,7 +11619,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

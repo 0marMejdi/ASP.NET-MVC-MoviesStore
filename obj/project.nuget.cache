@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BMvTeVHYEvjwM5DeltrHZ16DrKDyplP6tVVMUm1obxXLVSoE54IWdu5qe8zh0z41tY9H0VlL62vUz1LleFNGCA==",
+  "dgSpecHash": "9iKS7DUZtcUFpzDfD03pB4sBQ68zeyIgHuVSoW6kpGadSwoOnii58VOCPyuTkU8vN/megBRObG3lV4XpEZHZzg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Omar\\Desktop\\DotNet\\Workspace\\Hakuna\\Hakuna\\Hakuna.csproj",
+  "projectFilePath": "C:\\Users\\Omar\\Desktop\\DotNet\\WorkSpace\\ASP.NET-MVC-MoviesStore\\Hakuna.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Omar\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Omar\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

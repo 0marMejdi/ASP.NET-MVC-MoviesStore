@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hakuna")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a00daae5bac9c301b31a30318ec8fdad52c43410")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hakuna")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hakuna")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
