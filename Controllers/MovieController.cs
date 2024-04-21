@@ -7,7 +7,6 @@ using System;
 using System.IO;
 using System.Linq;
 using Hakuna.Services.ServicesContracts;
-using Microsoft.CodeAnalysis.Elfie.Serialization;
 
 namespace Hakuna.Controllers
 {
